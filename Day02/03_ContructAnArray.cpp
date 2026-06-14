@@ -14,22 +14,10 @@ int main() {
             continue;
         }
 
-        vector<int> v;
-
-        int idx=1;
-        while(idx<=n) {
-            v.push_back(idx);
-            idx+=2;
-        }
-
-        idx=2;
-        while(idx<=n) {
-            v.push_back(idx);
-            idx+=2;
-        }
-
-        for(int i=0; i<n; i++) {
-            cout<<v[i]<<" ";
+        for(int i=1; i<2*n; i++) {
+            if(i%2!=0) {
+                cout<<i<<" ";
+            }
         }
         cout<<"\n";
     }
